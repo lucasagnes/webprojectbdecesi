@@ -1,0 +1,137 @@
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: darkgrey;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    height: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid #000;
+    position: relative;
+    background-color: #1D1D1D;
+}
+
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 25px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo{
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 50px 0;
+    margin: 4px 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    color: #F1D600;
+}
+
+header nav .nav-list .list a:hover{
+    color: rgb(165, 46, 46);
+}
+
+@media (max-width: 575px){
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    header .logo{
+        margin-top: 0px;
+        margin-left: 35%;
+    }
+
+    header i.icon{
+        display: block;
+    }
+}
+
+#commentaire{
+    margin-left: 50%;
+}
+
+t{
+    width: 1100px;
+    border: 5px solid rgb(111,41,97);
+    border-radius: .5em;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  t{
+    width: 150px;
+    padding: 10px;
+    background-color: rgba(111,41,97,.3);
+    border: 2px solid rgba(111,41,97,.5);
+    display: inline-block;
+    vertical-align: middle
+  }
+
+#table{
+    margin-top: 70px;
+
+}
+
+
+
+#cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
